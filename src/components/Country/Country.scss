@@ -1,0 +1,105 @@
+@import "../../style/variables.scss";
+
+.country {
+  width: 100%;
+  padding: 2rem 4rem;
+
+  a {
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 0.2rem;
+    gap: 0.5rem;
+    background-color: $dark-blue;
+  }
+
+  div {
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+
+    img {
+      width: 40%;
+      min-width: 300px;
+    }
+
+    div {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      gap: 0;
+      color: $white;
+
+      h1 {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+
+      .infos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+
+        p {
+          font-weight: 600;
+          margin: 0;
+          flex: 50%;
+        }
+
+        span {
+          font-weight: 300;
+        }
+      }
+
+      p:has(.borders) {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .borders {
+        display: flex;
+        gap: 0.3rem;
+        margin: 0;
+        justify-content: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        span {
+          text-align: center;
+          padding: 0.25rem 0.5rem;
+          font-weight: 300;
+          width: fit-content;
+          background-color: $dark-blue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .infos {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .country {
+    padding-inline: 2rem;
+
+    div {
+      div {
+        p:has(.borders) {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}

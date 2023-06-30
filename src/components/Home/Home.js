@@ -1,26 +1,14 @@
 import React from 'react';
 import './Home.scss';
-import { Link } from 'react-router-dom';
+import Card from '../Card/Card';
+import countries from '../../data.json';
 
-const Home = () => {
-  const continents = [
-    'Asia',
-    'Africa',
-    'North America',
-    'South America',
-    ' Antarctica',
-    'Europe',
-    'Australia',
-  ];
-  return (
-    <div className="body">
-      {continents.map((continent) => (
-        <Link key={continent} to={`/continent/${continent}`}>
-          {continent}
-        </Link>
-      ))}
-    </div>
-  );
-};
+const Home = () => (
+  <div className="body">
+    {countries.map((country) => (
+      <Card key={country.name} country={country} />
+    ))}
+  </div>
+);
 
 export default Home;

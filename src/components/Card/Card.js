@@ -13,9 +13,9 @@ const Card = ({ country }) => {
   const formattedPopulation = new Intl.NumberFormat('tr-TR').format(population);
 
   return (
-    <div className="card" onClick={() => navigator(`/country/${name}`)} aria-hidden="true">
+    <div className="card" onClick={() => navigator(`/${name}`)} aria-hidden="true">
       <img src={flag} alt="Flag" />
-      <ol className="info">
+      <ol>
         <h2>{name}</h2>
         <li>
           Population:

@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Countries from './components/Countries';
-import CountryDetails from './components/CountryDetails';
+import Country from './components/Country/Country';
 
 function App() {
   return (
@@ -11,8 +10,8 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/continent/:name" element={<Countries />} />
-        <Route path="/country/:name" element={<CountryDetails />} />
+        <Route path="/:country" element={<Country />} />
+        {/* <Route path="/continent/:name" element={<Countries />} /> */}
       </Routes>
     </>
   );
