@@ -10,7 +10,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:country" element={<Country />} />
+        <Route path="/:countryName" element={<Country />} />
         {/* <Route path="/continent/:name" element={<Countries />} /> */}
       </Routes>
     </>

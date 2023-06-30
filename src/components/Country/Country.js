@@ -1,14 +1,20 @@
-import React, { useMemo } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import data from '../../data.json';
+import { fetchWeather } from '../../redux/weather/weatherSlice';
+
 import './Country.scss';
+import Weather from '../Weather/Weather';
 
 const Country = () => {
-  const { country } = useParams();
+  const { countryName } = useParams();
+  const dispatch = useDispatch();
 
-  const memo = useMemo(
-    () => data.filter((el) => el.name.toLowerCase() === country?.toLowerCase()),
-    [country],
+  const country = data.filter(
+    (el) => el.name.toLowerCase() === countryName?.toLowerCase(),
   );
 
   const [
@@ -24,15 +30,23 @@ const Country = () => {
       subregion,
       capital,
       borders,
+      latlng,
     },
-  ] = memo;
+  ] = country;
+
   const formattedPopulation = new Intl.NumberFormat('tr-TR').format(population);
   const languagesList = languages.map((el) => el.name).join(',');
+
+  useEffect(() => {
+    if (latlng) dispatch(fetchWeather(latlng));
+  }, [latlng, dispatch]);
+
+  const { weather, loading, error } = useSelector((state) => state.weather);
 
   return (
     <div className="country">
       <Link to="/">
-        <i className="fa-solid fa-arrow-left" />
+        <FaArrowLeft className="back-icon" />
         Back
       </Link>
 
@@ -86,6 +100,11 @@ const Country = () => {
           </div>
         </div>
       </div>
+      {weather ? (
+        <Weather weatherData={weather} />
+      ) : (
+        <h2 style={{ textAlign: 'center', color: 'white' }}>Loading...</h2>
+      )}
     </div>
   );
 };

@@ -1,0 +1,30 @@
+.weather-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .location-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .weather-description {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .temperature {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .humidity,
+  .wind-speed {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+}
