@@ -6,10 +6,11 @@
 
 [📗 Table of Contents](#-table-of-contents)
 
-- [📖 Countries Weather ](#-countries-weather-)
+- [Countries Weather ](#-countries-weather-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [Live-Demo](#live-demo-)
 - [Future Features ](#future-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -21,16 +22,13 @@
   - [⭐️ Show your support ](#️-show-your-support-)
   - [📝 License ](#-license-)
 
-# 📖 Countries Weather <a name="about-project"></a>
+# Countries Weather <a name="about-project"></a>
 
 Countries Weather is a React project that provides users with up-to-date weather information for countries around the world. It offers a user-friendly interface where users can easily search for a specific country and view its current weather conditions, including temperature, humidity, wind speed, and more.
 
 
 
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
+### 🛠 Built With <a name="built-with"></a>
 - HTML
 - SCSS
 - React
@@ -42,12 +40,14 @@ Countries Weather is a React project that provides users with up-to-date weather
 - [ ] **Show all counties and filter them.**
 - [ ] **Represent weather for each country.**
 
-# Future Features <a name="future-features"></a>
+### Future Features <a name="future-features"></a>
 
 - Geolocation: Implement geolocation functionality to automatically detect the user's location and display the local weather by default.
 - Favorites: Enable users to save their favorite countries and easily access their weather information without having to search for them repeatedly.
 - Weather Alerts: Integrate weather alert notifications to inform users about severe weather conditions in their selected countries.
 - Map Visualization: Incorporate a map interface to visualize the weather data geographically and enhance the user's understanding of global weather patterns.
+
+### 🚀 Live Demo <a href='https://countries-weather-one.vercel.app/'>https://countries-weather-one.vercel.app/</a> 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
