@@ -100,11 +100,7 @@ const Country = () => {
           </div>
         </div>
       </div>
-      {weather ? (
-        <Weather weatherData={weather} />
-      ) : (
-        <h2 style={{ textAlign: 'center', color: 'white' }}>Loading...</h2>
-      )}
+      {weather && <Weather weatherData={weather} />}
     </div>
   );
 };

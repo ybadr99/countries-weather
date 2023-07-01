@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component renders the card correctly 1`] = `
+<div
+  aria-hidden="true"
+  class="card"
+>
+  <img
+    alt="Flag"
+    src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg"
+  />
+  <ol>
+    <h2>
+      Afghanistan
+    </h2>
+    <li>
+      Population:
+      <span>
+        40.218.234
+      </span>
+    </li>
+    <li>
+      Region:
+      <span>
+        Asia
+      </span>
+    </li>
+    <li>
+      Capital:
+      <span>
+        Kabul
+      </span>
+    </li>
+  </ol>
+</div>
+`;

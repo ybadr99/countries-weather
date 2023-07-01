@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the countries correctly 1`] = `
+<div>
+  <nav>
+    <h1>
+      Where in the world?
+    </h1>
+  </nav>
+  <button
+    class="filter"
+    type="button"
+  >
+    <div>
+      Filter by region
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 448 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+        />
+      </svg>
+    </div>
+  </button>
+  <div
+    class="body"
+  >
+    <div
+      aria-hidden="true"
+      class="card"
+    >
+      <img
+        alt="Flag"
+      />
+      <ol>
+        <h2>
+          Afghanistan
+        </h2>
+        <li>
+          Population:
+          <span>
+            NaN
+          </span>
+        </li>
+        <li>
+          Region:
+          <span />
+        </li>
+        <li>
+          Capital:
+          <span />
+        </li>
+      </ol>
+    </div>
+    <div
+      aria-hidden="true"
+      class="card"
+    >
+      <img
+        alt="Flag"
+      />
+      <ol>
+        <h2>
+          Åland Islands
+        </h2>
+        <li>
+          Population:
+          <span>
+            NaN
+          </span>
+        </li>
+        <li>
+          Region:
+          <span />
+        </li>
+        <li>
+          Capital:
+          <span />
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
