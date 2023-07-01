@@ -1,0 +1,49 @@
+@import '../../style/variables.scss';
+
+.filter {
+  padding: 1rem;
+  color: $white;
+  position: relative;
+  background-color: $dark-blue;
+  width: 25%;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    color: $white;
+
+    &.regions {
+      width: 100%;
+      position: absolute;
+      height: 10rem;
+      overflow-y: scroll;
+      top: 3.5rem;
+      display: flex;
+      gap: 0;
+      flex-direction: column;
+      left: 0;
+      z-index: 99;
+
+      button {
+        width: 100%;
+        padding: 1rem;
+        color: $white;
+        border: none;
+        flex: 1;
+        cursor: pointer;
+        z-index: 99;
+        text-align: left;
+        background-color: $dark-blue;
+
+        &:hover {
+          background-color: $dark-gray;
+        }
+      }
+    }
+  }
+}
