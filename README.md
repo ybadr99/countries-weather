@@ -47,7 +47,7 @@ Countries Weather is a React project that provides users with up-to-date weather
 - Weather Alerts: Integrate weather alert notifications to inform users about severe weather conditions in their selected countries.
 - Map Visualization: Incorporate a map interface to visualize the weather data geographically and enhance the user's understanding of global weather patterns.
 
-### 🚀 Live Demo <a name='live-demo'>/</a> 
+### 🚀 Live Demo <a name='live-demo'></a> 
 - [Experince a live demo](https://countries-weather-gtwj.vercel.app)
 
 ## 💻 Getting Started <a name="getting-started"></a>
