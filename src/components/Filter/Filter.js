@@ -43,7 +43,6 @@ const Filter = () => {
             <button
               type="button"
               onClick={(e) => handleRegion(e, region)}
-              // eslint-disable-next-line react/no-array-index-key
               key={idx}
             >
               {region}

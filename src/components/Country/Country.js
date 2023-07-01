@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
@@ -41,7 +40,7 @@ const Country = () => {
     if (latlng) dispatch(fetchWeather(latlng));
   }, [latlng, dispatch]);
 
-  const { weather, loading, error } = useSelector((state) => state.weather);
+  const { weather } = useSelector((state) => state.weather);
 
   return (
     <div className="country">

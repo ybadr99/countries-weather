@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import './Card.scss';
 import { useNavigate } from 'react-router-dom';
