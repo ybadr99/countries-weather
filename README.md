@@ -117,7 +117,8 @@ If you like this project:thumbsup:
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank:
-- [Front End mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) for the website design system that inspired my design.
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the website design system that inspired my design.
+- [Front End mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca) for design enhancment.
 - [OpenWeatherApi](https://openweathermap.org/) for the amazing API.
 
 <!-- LICENSE -->
