@@ -8,11 +8,8 @@ const Home = () => {
   const { countries } = useSelector((state) => state.countries);
   return (
     <>
-      <nav>
-        <h1>Where in the world?</h1>
-      </nav>
       <Filter />
-      <div className="body">
+      <div className="cards">
         {countries.map((country) => (
           <Card key={country.name} country={country} />
         ))}

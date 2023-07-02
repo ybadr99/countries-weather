@@ -26,20 +26,16 @@ const Filter = () => {
   useEffect(() => {
     if (selectedRegion !== 'Filter by region') {
       if (selectedRegion === 'All Regions') {
+        setSearchInput('');
         dispatch(setCountries(data));
+      } else if (searchInput) {
+        // eslint-disable-next-line max-len
+        const filteredCountry = data.filter((el) => el.name.toLowerCase().includes(searchInput.toLowerCase()));
+        dispatch(setCountries(filteredCountry));
       } else {
-        const selectedRegionArray = data.filter(
-          (el) => el?.region === selectedRegion,
-        );
+        const selectedRegionArray = data.filter((el) => el?.region === selectedRegion);
         dispatch(setCountries(selectedRegionArray));
       }
-    }
-    if (searchInput === '') {
-      dispatch(setCountries(data));
-    } else if (searchInput) {
-      // eslint-disable-next-line max-len
-      const filteredCountry = data.filter((el) => el.name.toLowerCase().includes(searchInput.toLowerCase()));
-      dispatch(setCountries(filteredCountry));
     }
   }, [
     selectedRegion,
