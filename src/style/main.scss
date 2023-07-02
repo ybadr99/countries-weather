@@ -1,10 +1,8 @@
 @import './variables.scss';
 
-
 #root {
   width: 100%;
   background-color: $very-dark-blue;
-
 }
 
 .bod {
@@ -53,6 +51,7 @@ a {
     input,
     .filter {
       background-color: $very-light-gray;
+
       div,
       div.regions > button {
         background-color: $very-light-gray;
@@ -63,6 +62,7 @@ a {
 
   .card {
     background-color: $very-light-gray;
+
     ol {
       color: $dark-blue;
     }
