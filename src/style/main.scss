@@ -10,6 +10,7 @@
   max-width: 1440px;
   min-width: 375px;
   margin: 0 auto;
+  height: 100vh;
   font-size: $homepage-font-size;
   background-color: $very-dark-blue;
 
@@ -40,7 +41,7 @@ a {
 }
 
 .light {
-  background-color: rgba(245, 222, 179, 0.8);
+  background-color: #faedcd;
 
   nav {
     background-color: $very-light-gray;
@@ -51,6 +52,7 @@ a {
     input,
     .filter {
       background-color: $very-light-gray;
+      color: $dark-blue;
 
       div,
       div.regions > button {

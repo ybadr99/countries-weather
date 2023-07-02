@@ -19,7 +19,7 @@ function App() {
   } else {
     document
       .getElementById('root')
-      .style.setProperty('background-color', 'hsla(39,77%,83%,.8);');
+      .style.setProperty('background-color', '#faedcd');
   }
 
   return (

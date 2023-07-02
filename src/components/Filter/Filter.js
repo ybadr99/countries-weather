@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
@@ -17,26 +18,36 @@ const Filter = () => {
     setIsOpen(false);
   };
 
-  const handleCountryChange = (e) => {
-    setSearchInput(e.target.value);
-  };
-
   const dispatch = useDispatch();
 
   useEffect(() => {
     if (selectedRegion !== 'Filter by region') {
       if (selectedRegion === 'All Regions') {
-        setSearchInput('');
         dispatch(setCountries(data));
       } else if (searchInput) {
-        // eslint-disable-next-line max-len
-        const filteredCountry = data.filter((el) => el.name.toLowerCase().includes(searchInput.toLowerCase()));
+        const filteredCountry = data.filter(
+          (el) => el?.region === selectedRegion
+            && el.name.toLowerCase().includes(searchInput.toLowerCase()),
+        );
         dispatch(setCountries(filteredCountry));
       } else {
-        const selectedRegionArray = data.filter((el) => el?.region === selectedRegion);
+        const selectedRegionArray = data.filter(
+          (el) => el?.region === selectedRegion,
+        );
         dispatch(setCountries(selectedRegionArray));
       }
     }
+
+    if (searchInput.length) {
+      if (selectedRegion !== 'Filter by region' && selectedRegion.length) {
+        const searchedCountries = data.filter((el) => el?.name.toLowerCase().includes(searchInput.toLowerCase()) && selectedRegion === el.region);
+        dispatch(setCountries(searchedCountries));
+      } else {
+        const searchedCountries = data.filter((el) => el?.name.toLowerCase().includes(searchInput.toLowerCase()));
+        console.log(searchInput, searchedCountries);
+        dispatch(setCountries(searchedCountries));
+      }
+    } else dispatch(setCountries(data));
   }, [
     selectedRegion,
     setSelectedRegion,
@@ -50,7 +61,7 @@ const Filter = () => {
       <input
         type="text"
         placeholder="Search country"
-        onChange={handleCountryChange}
+        onChange={(e) => setSearchInput(e.target.value)}
         value={searchInput}
       />
       <button
