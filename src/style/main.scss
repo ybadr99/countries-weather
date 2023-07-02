@@ -1,0 +1,70 @@
+@import './variables.scss';
+
+#root {
+  width: 100%;
+  background-color: $very-dark-blue;
+}
+
+.bod {
+  font-family: 'Nunito Sans', sans-serif;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  font-size: $homepage-font-size;
+  background-color: $very-dark-blue;
+
+  nav {
+    padding: 1rem 4rem;
+    background-color: $dark-blue;
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .home {
+    padding-inline: 2rem;
+  }
+
+  img {
+    height: unset !important;
+  }
+}
+
+a {
+  color: white;
+}
+
+.light {
+  background-color: rgba(245, 222, 179, 0.8);
+
+  nav {
+    background-color: $very-light-gray;
+    color: #000;
+  }
+
+  .search {
+    input,
+    .filter {
+      background-color: $very-light-gray;
+
+      div,
+      div.regions > button {
+        background-color: $very-light-gray;
+        color: $dark-blue;
+      }
+    }
+  }
+
+  .card {
+    background-color: $very-light-gray;
+
+    ol {
+      color: $dark-blue;
+    }
+  }
+}
