@@ -3,14 +3,15 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-
+Software developer with a strong programming background and a passion for efficient solutions. Skilled in JavaScript, React, Redux, Node.js, and Ruby on Rails, along with agile methodologies, focusing on web development.
+Committed to continuous learning, staying updated with emerging tech. A collaborative problem solver, seeking to contribute expertise in a dynamic environment.
 [📗 Table of Contents](#-table-of-contents)
 
 - [Countries Weather ](#-countries-weather-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-    - [Live-Demo](#live-demo-)
+  - [🚀 Live Demo](#live-demo)
 - [Future Features ](#future-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -47,8 +48,8 @@ Countries Weather is a React project that provides users with up-to-date weather
 - Weather Alerts: Integrate weather alert notifications to inform users about severe weather conditions in their selected countries.
 - Map Visualization: Incorporate a map interface to visualize the weather data geographically and enhance the user's understanding of global weather patterns.
 
-### 🚀 Live Demo <a name='live-demo'></a> 
-- [Experince a live demo](https://countries-weather-gtwj.vercel.app)
+### 🚀 Live Demo <a name="live-demo">https://countries-weather-gtwj.vercel.app</a>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
